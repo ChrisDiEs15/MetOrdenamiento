@@ -53,18 +53,22 @@ public class MetOrdenamiento {
                 System.out.println("Ha elegido" +opcion3);
                 int unordered3[]=DatosEntrada();
                 MethodSelector(unordered3, opcion,opcion3);
+                break;
             case 4:
                 System.out.println("Ha elegido" +opcion4);
                 int unordered4[]=DatosEntrada();
                 MethodSelector(unordered4, opcion,opcion4);
+                break;
             case 5:
                 System.out.println("Ha elegido" +opcion5);
                 int unordered5[]=DatosEntrada();
                 MethodSelector(unordered5,opcion,opcion5);
+                break;
             case 6:
                 System.out.println("Ha elegido" +opcion6);
                 int unordered6[]=DatosEntrada();
                 MethodSelector(unordered6, opcion,opcion6);
+                break;
         }
 
     }
