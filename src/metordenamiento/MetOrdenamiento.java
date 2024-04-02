@@ -39,32 +39,32 @@ public class MetOrdenamiento {
 
         switch (opcion) {
             case 1:
-                System.out.println("Ha elegino" + opcion1);
+                System.out.println("Ha elegino" +opcion1);
                 int unordered1[] = DatosEntrada();
                 /*Method Selector*/
-                MethodSelector(unordered1,opcion, opcion1);
+                MethodSelector(unordered1, opcion, opcion1);
                 break;
             case 2:
-                System.out.println("Ha elegido"+opcion2);
+                System.out.println("Ha elegido" +opcion2);
                 int unordered2[]=DatosEntrada();
-                MethodSelector(unordered2,opcion,opcion2);
+                MethodSelector(unordered2, opcion,opcion2);
                 break;
             case 3:
-                System.out.println("Ha elegido"+opcion3);
+                System.out.println("Ha elegido" +opcion3);
                 int unordered3[]=DatosEntrada();
-                MethodSelector(unordered3,opcion,opcion3);
+                MethodSelector(unordered3, opcion,opcion3);
             case 4:
-                System.out.println("Ha elegido"+opcion4);
+                System.out.println("Ha elegido" +opcion4);
                 int unordered4[]=DatosEntrada();
-                MethodSelector(unordered4,opcion,opcion4);
+                MethodSelector(unordered4, opcion,opcion4);
             case 5:
-                System.out.println("Ha elegido"+opcion5);
+                System.out.println("Ha elegido" +opcion5);
                 int unordered5[]=DatosEntrada();
                 MethodSelector(unordered5,opcion,opcion5);
             case 6:
-                System.out.println("Ha elegido"+opcion6);
+                System.out.println("Ha elegido" +opcion6);
                 int unordered6[]=DatosEntrada();
-                MethodSelector(unordered6,opcion,opcion6);
+                MethodSelector(unordered6, opcion,opcion6);
         }
 
     }
@@ -89,34 +89,37 @@ public class MetOrdenamiento {
             case 1:
                 /*bubble Sort*/
                 int[] OrderedArray1 = MBubble.BubbleOrder(sizeArray, UnorderedArray);
-                System.out.println("El array ordenado por" + nameOpcion + "es:");
+                System.out.println("El array ordenado por" +nameOpcion+ "es:");
                 ArrayPrint.PrintArray(sizeArray, OrderedArray1);
                 break;
             case 2:
                 /*Quick Sort*/
                 int[] OrderedArray2 = MQuickSort.MquickSort(UnorderedArray);
-                System.out.println("El array ordenado por" + nameOpcion + "es:");
+                System.out.println("El array ordenado por" +nameOpcion+ "es:");
                 ArrayPrint.PrintArray(sizeArray, OrderedArray2);
                 break;
             case 3:
                 /*Merge Sort*/
                 int[] OrderedArray3 = MMergeSort.MSorted(UnorderedArray);
-                System.out.println("El array ordenado por" + nameOpcion + "es:");
+                System.out.println("El array ordenado por" +nameOpcion+ "es:");
                 ArrayPrint.PrintArray(sizeArray, OrderedArray3);
                 break;
             case 4:
+                /*Selection Sort*/
                 int[] OrderedArray4 = MSelectionSort.SelectionOrder(UnorderedArray, sizeArray);
-                System.out.println("El array ordenado por" + nameOpcion + "es:");
+                System.out.println("El array ordenado por" +nameOpcion+ "es:");
                 ArrayPrint.PrintArray(sizeArray, OrderedArray4);
                 break;
             case 5:
+                /*Shell sort*/
                 int[] OrderedArray5 = MShellSort.ShellOrder(UnorderedArray, sizeArray);
-                System.out.println("El array ordenado por" + nameOpcion + "es:");
+                System.out.println("El array ordenado por" +nameOpcion+ "es:");
                 ArrayPrint.PrintArray(sizeArray, OrderedArray5);
                 break;
             case 6:
+                /*Insertion Sort*/
                 int[] OrderedArray6 = MInsertionSort.InsertionOrder(UnorderedArray, sizeArray);
-                System.out.println("El array ordenado por" + nameOpcion + "es:");
+                System.out.println("El array ordenado por" +nameOpcion+ "es:");
                 ArrayPrint.PrintArray(sizeArray, OrderedArray6);
                 break;
         }
